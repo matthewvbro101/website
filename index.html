@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functionality.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tech</h1>
+        <p>Info</p>
+    </div>
+    <ul class="options">
+        <li><a href="#" onclick="document.getElementById('myframe').src='pages/home.html'">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Tech</a>
+            <div class="dropdown-content">
+                <a href="#" onclick="document.getElementById('myframe').src='pages/ios.html'">Iphone</a>
+                <a href="#" onclick="document.getElementById('myframe').src='pages/ps4.html'">PS4</a>
+                <a href="#" onclick="document.getElementById('myframe').src='pages/xbox.html'">Xbox</a>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="allData">
+        <iframe id="myframe" src="pages/home.html" style="width:100%; height:100%"></iframe>
+    </div>
+</body>
+</html>
